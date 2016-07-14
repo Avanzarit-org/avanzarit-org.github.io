@@ -638,7 +638,19 @@ SOCIAL BUTTONS
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    padding-bottom: 150px;
+    height:600px;
+    position:relative;
+}
+
+#processes .overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    padding-top:150px;
 }
 
 #processes .process-col {
@@ -670,9 +682,34 @@ SOCIAL BUTTONS
     border-radius: 50%;
     border: 1px dashed #fff;
 }
+@media (max-width: 768px) {
+    
+    #processes{
+        height:650px;
+    }
+    
+    #processes i {
+   
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+    text-align: center;
+ 
+   
+}
+    #processes h4 {
+        font-size:12px;
+    }
+    
+    #processes .overlay {
+        
+        padding-top:100px;
+    }
+    
+}
 
 #processes h4 {
-    font-weight: 400;
+    font-weight: 900;
     color: #fff;
     text-transform: uppercase;
     margin-bottom: 0px;
