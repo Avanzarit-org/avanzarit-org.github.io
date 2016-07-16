@@ -53,16 +53,19 @@ p {
 
 
 .navbar-toggle {
-    color: #fff;
+    color: #000;
 }
 
 .navbar-custom {
     margin-bottom: 0;
-  
+    height: 85px;
+    padding-top:12px;
+    background-color: rgba(255, 255, 255, 1);
     border-bottom: 1px solid rgba(255, 255, 255, .3);
     text-transform: uppercase;
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background-color: #000;
+   
+   
 }
 
 .navbar-custom .navbar-brand {
@@ -83,9 +86,21 @@ p {
 .navbar-custom .navbar-brand .navbar-toggle:active {
     outline: 0;
 }
+/**The brand Image **/
+.navbar-custom .navbar-brand img{
+    top:-65px;
+    left:-35px;
+    width:300px;
+    height:200px;
+    position:absolute
+}
 
 .navbar-custom a {
-    color: #fff;
+    color: blue;
+}
+
+.navbar-custom.top-nav-collapse a {
+    color: white;
 }
 
 .navbar-custom .nav li{
@@ -99,7 +114,14 @@ p {
 
 .navbar-custom .nav li a:hover {
     outline: 0;
-    color: rgba(255, 255, 255, .8);
+    color:blue;
+    background-color: rgba(211,211,211, .3);
+}
+
+.navbar-custom.top-nav-collapse .nav li a:hover {
+    outline: 0;
+   /** color: rgba(255, 255, 255, .8); **/
+    color:gray;
     background-color: transparent;
 }
 
@@ -118,32 +140,41 @@ p {
 }
 
 .navbar-custom .nav li.active a:hover {
-    color: #fff;
+    color: #fff; 
+     background-color: rgba(255, 255, 255, .3);
 }
 
 @media(min-width:768px) {
     .navbar-custom {
-        height: 60px;
         border-bottom: 0;
         letter-spacing: 1px;
-        background: 0 0;
         -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
         transition: background .5s ease-in-out, padding .5s ease-in-out;
     }
+  
+    /**  This is to style the navigation on scroll at maximum width we dont need this any more with the white background**/
     .navbar-custom.top-nav-collapse {
-        padding: 0;
-        border-bottom: 1px solid rgba(255, 255, 255, .3);
+     /**   padding: 0;**/
+     /**   border-bottom: 1px solid rgba(255, 255, 255, .3);**/
         background: #000;
-        height: 60px;
-    }
+       /** height: 60px;**/
+    } 
+}
+/** for mobile rendition **/
+@media(max-width:768px) {
+.navbar-custom .navbar-main-collapse{
+    background-color:black;
+    margin-top:15px;
+}
 }
 
 .intro {
     position: relative;
+    margin-top:85px;
     width: 100%;
     height: 600px;
-    padding: 100px 0;
+    padding: 20px 0;
     text-align: center;
     color: #fff;
 }

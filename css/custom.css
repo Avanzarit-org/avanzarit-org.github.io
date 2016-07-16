@@ -643,7 +643,7 @@ SOCIAL BUTTONS
 }
 
 #processes .overlay {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.1);
     position: absolute;
     left: 0;
     top: 0;
@@ -724,7 +724,7 @@ SOCIAL BUTTONS
 /*********CONTACT US**************/
 
 .contactus {
-    background-color: #eee
+    background-color: #fff
 }
 
 .contactus h3 {
