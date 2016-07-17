@@ -828,7 +828,15 @@ SOCIAL BUTTONS
     border-radius: 0;
 }
 
+.close{
+    font-size:35px;
+    color:black;
+    opacity: inherit;
+}
 
+.modal-title{
+    padding-top:8px;
+}
 
 .ourwork-box-icon {
     background: transparent;
@@ -867,3 +875,4 @@ SOCIAL BUTTONS
     border-color: #ddd;
     font-weight: 700;
 }
+
