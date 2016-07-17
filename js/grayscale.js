@@ -5,13 +5,32 @@
  */
 
 // jQuery to collapse the navbar on scroll
+
+//var isCollapseMenuShown=false;
 function collapseNavbar() {
     if ($(".navbar").offset().top > 50) {
         $(".navbar-fixed-top").addClass("top-nav-collapse");
-    } else {
+     
+    } else{
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
+      
     }
 }
+
+/*$('.navbar-collapse').on('shown.bs.collapse', function() {
+$(".navbar-fixed-top").addClass("top-nav-collapse");
+    isCollapseMenuShown=true;
+});
+$('.navbar-collapse').on('hide.bs.collapse', function() {
+isCollapseMenuShown=false;
+});
+
+$('.navbar-collapse').on('hidden.bs.collapse', function() {
+    console.log("hidden");
+isCollapseMenuShown=false;
+});*/
+
+
 
 $(window).scroll(collapseNavbar);
 $(document).ready(collapseNavbar);
@@ -21,11 +40,13 @@ $(function() {
     $('a.page-scroll').bind('click', function(event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
+            scrollTop: $anchor.hasClass('navbar-brand') ? 0 :$($anchor.attr('href')).offset().top
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
     });
 });
+
+
 
 // Closes the Responsive Menu on Menu Item Click
 $('.navbar-collapse ul li a').click(function() {
