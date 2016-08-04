@@ -159,6 +159,16 @@ p {
 }
 
 
+@media(max-width:768px){
+    .navbar-custom .navbar-brand img {
+    top: -65px;
+    left: -65px;
+    width: 300px;
+    height: 200px;
+    position: absolute
+}
+
+}
 /** for mobile rendition **/
 
 @media(max-width:991px) {

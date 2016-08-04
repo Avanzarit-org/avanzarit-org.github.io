@@ -809,9 +809,27 @@ SOCIAL BUTTONS
 
 /*****OUT CLIENTS ***********/
 
+.clients .row p{
+    font-size:15px;
+    line-height: 1.6;
+    text-align:left;
+    
+}
+@media (max-width: 568px) {
+.clients .row p{
+    font-size:12px;
+    line-height: 1.6;
+ 
+    
+}
+}
 .clients {
     background-color: #eee;
-    padding-bottom: 120px;
+     padding-bottom: 80px;
+}
+
+.clients img{
+    margin-bottom:30px;
 }
 
 .modal-dialog {
