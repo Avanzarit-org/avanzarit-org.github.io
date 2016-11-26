@@ -265,8 +265,18 @@ p {
 }
 
 .intro .intro-body .brand-heading {
-    font-size: 20px;
+    font-size: 30px;
 }
+
+.intro .intro-body .brand-subheading {
+            font-size: 20px;
+            text-transform:inherit;
+    }
+    
+    .intro .intro-body .brand-subheading .emphasis {
+                font-size: 25px;
+                
+    }
 
 .intro .intro-body .intro-text {
     font-size: 18px;
@@ -280,6 +290,15 @@ p {
     }
     .intro .intro-body .brand-heading {
         font-size: 70px;
+    }
+    .intro .intro-body .brand-subheading {
+            font-size: 30px;
+            text-transform:inherit;
+    }
+    
+    .intro .intro-body .brand-subheading .emphasis {
+                font-size: 45px;
+                
     }
     .intro .intro-body .intro-text {
         font-size: 26px;
