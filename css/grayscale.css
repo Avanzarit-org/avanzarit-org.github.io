@@ -275,6 +275,7 @@ p {
      
     .intro .intro-body .brand-subheading .emphasis {
                 font-size: 25px;
+                letter-spacing:-4px;
                 
     }
 
@@ -298,6 +299,7 @@ p {
     
     .intro .intro-body .brand-subheading .emphasis {
                 font-size: 45px;
+                letter-spacing:-4px;
                 
     }
     .intro .intro-body .intro-text {
