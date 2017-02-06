@@ -406,6 +406,13 @@ p {
     }
 }
 
+@media (max-width: 991px) {
+#map {
+        height: 300px;
+        width: 100%;
+    }
+}
+
 .btn {
     border-radius: 0;
     text-transform: uppercase;
